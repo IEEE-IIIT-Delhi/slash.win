@@ -1,0 +1,161 @@
+html,
+body,
+:root {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #eee;
+  background: #111;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  top: 0;
+  position: sticky;
+  background: #111111f5;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+main > section {
+  width: 90%;
+  max-width: 800px;
+  margin: 10vh auto;
+}
+
+section.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+section.top p.elysium {
+  font-size: 22px;
+}
+
+section.top p.elysium a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+section.top img {
+  height: 100px;
+  margin: 5vh 0;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+section.top p.subtitle {
+  font-size: 24px;
+  margin-bottom: 5vh;
+  font-weight: 500;
+}
+
+section.top .dates {
+  font-size: 20px;
+}
+
+section.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.register a.register {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 100;
+  background: linear-gradient(90deg, #1c5fa2, #3e55a9);
+  transition: 0.1s all ease-in-out;
+}
+
+section.register a.register:hover,
+section.register a.register:focus,
+section.register a.register:active {
+  box-shadow: 0 5px 10px -5px #2f5aa6;
+}
+
+section.register a.discord {
+  color: #ddd;
+  margin-top: 5vh;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+section.register a.discord:hover {
+  text-decoration: underline;
+}
+
+section.content {
+  border-top: 1px solid #ff34584a;
+  border-bottom: 1px solid #ff34584a;
+}
+
+section.content > section {
+  margin: 5vh 0;
+}
+
+section.content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff6782;
+  text-shadow: 0 0 20px #ff678280;
+}
+
+section.content p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+footer {
+  max-width: 800px;
+  width: 90%;
+  margin: -5vh auto 5vh;
+}
+
+footer p {
+  line-height: 1.7;
+  color: #ffffff85;
+}
+
+footer a {
+  color: #ff6782;
+}
