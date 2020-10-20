@@ -152,11 +152,17 @@ section.content h1 {
   text-shadow: 0 0 20px #ff678280;
 }
 
-section.content p {
+section.content p,
+section.content li {
   line-height: 1.5;
   font-size: 16px;
   color: #bbb;
   margin-bottom: 20px;
+}
+
+section.content li {
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
 footer {
